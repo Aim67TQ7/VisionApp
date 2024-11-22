@@ -1,0 +1,29 @@
+// LandingPage.tsx
+import React from 'react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import HeroSection from '../components/HeroSection';
+
+const LandingPage: React.FC = () => {
+  return (
+    <div className="landing-page">
+      {/* Header Component */}
+      <Header />
+
+      {/* Main Hero Section */}
+      <main>
+        <HeroSection />
+      </main>
+
+      {/* Footer Component */}
+      <Footer />
+    </div>
+  );
+};
+
+export default LandingPage;
+
+// Description:
+// This file is the landing page of the website. It imports and uses the Header, HeroSection, and Footer components.
+// The HeroSection contains the main link to the hero application that allows users to upload images.
+// The Header and Footer provide consistent navigation and contact details for users.

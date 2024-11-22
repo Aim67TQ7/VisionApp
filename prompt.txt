@@ -1,0 +1,25 @@
+# prompt.txt
+
+# Description of the Evaluation Criteria for Anthropics Vision App
+
+- **Objective**: Assess the overall curb appeal of a provided photo of a workbench, house, or area.
+- **Categories for Evaluation**:
+  - **Cleanliness**: Is the area free of clutter and clean? (Rate from 1 to 10)
+  - **Maintenance**: Assess whether any maintenance is needed. Does the paint look fresh? Are there broken elements?
+  - **Aesthetics**: Rate the visual appeal in terms of colors, decorations, and landscaping. (Rate from 1 to 10)
+  - **Suggestions for Improvement**: Provide recommendations on what could be done to improve the appearance.
+  - **Safety**: Assess if there are any potential safety concerns, such as uneven surfaces, exposed wires, etc.
+- **Output Format**:
+  - Provide a JSON output that includes ratings and suggestions for each category.
+  - Include an overall score for curb appeal (aggregated average from all ratings).
+  - List specific suggested actions for improvement, each categorized by the estimated impact level (Low, Medium, High).
+
+# Notes
+- The evaluation should be objective, providing constructive feedback with clear reasons.
+- The results should include a score (1 to 10) for each category and an overall average score.
+- The suggestions should be actionable, easy to understand, and practical for the user.
+
+# Linking with Application
+- The prompt is dynamically loaded in the application using the `promptLoader` utility.
+- This allows frequent updates to the prompt without changing the TypeScript code.
+- Ensure that the path to this file is correctly set up in the `promptLoader` utility to avoid any loading issues.
